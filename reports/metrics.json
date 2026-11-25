@@ -1,0 +1,178 @@
+{
+  "synthetic_data": true,
+  "history_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "forecast_years": [
+    2026,
+    2027,
+    2028
+  ],
+  "variance": {
+    "mean_abs_variance_pct": 1.71,
+    "n_flagged_over_5pct": 3,
+    "worst_department": "Operations & Maintenance",
+    "worst_department_mean_abs_variance_pct": 2.44
+  },
+  "forecast_holdout_mape_pct": {
+    "revenue": {
+      "naive": 2.88,
+      "linear_trend": 9.9,
+      "ridge": 9.22
+    },
+    "expenditure": {
+      "naive": 5.41,
+      "linear_trend": 0.98,
+      "ridge": 1.07
+    },
+    "best_revenue_model": "naive",
+    "best_expenditure_model": "linear_trend"
+  },
+  "projection_fy26_28": [
+    {
+      "fiscal_year": 2026,
+      "projected_revenue": 43578440.88,
+      "projected_expenditure": 47101199.03,
+      "projected_surplus_deficit": -3522758.15
+    },
+    {
+      "fiscal_year": 2027,
+      "projected_revenue": 43578440.88,
+      "projected_expenditure": 48345322.88,
+      "projected_surplus_deficit": -4766881.99
+    },
+    {
+      "fiscal_year": 2028,
+      "projected_revenue": 43578440.88,
+      "projected_expenditure": 49589446.72,
+      "projected_surplus_deficit": -6011005.84
+    }
+  ],
+  "sustainability": {
+    "score": 55.8,
+    "band": "Watch",
+    "components": {
+      "fund_balance_pct": 40.0,
+      "structural_balance": 0.0,
+      "revenue_diversity": 15.8,
+      "reserve_trend": 0.0
+    },
+    "fund_balance_pct_of_budget": 8.46,
+    "structural_balance_pct": -4.7,
+    "revenue_hhi": 0.408,
+    "reserve_trend_usd_per_year": -1947110.0
+  },
+  "projected_fund_balance": [
+    {
+      "fiscal_year": 2026,
+      "projected_surplus_deficit": -3522758.15,
+      "projected_fund_balance_eoy": 473468.85,
+      "projected_fund_balance_pct_of_budget": 1.01
+    },
+    {
+      "fiscal_year": 2027,
+      "projected_surplus_deficit": -4766881.99,
+      "projected_fund_balance_eoy": -4293413.14,
+      "projected_fund_balance_pct_of_budget": -8.88
+    },
+    {
+      "fiscal_year": 2028,
+      "projected_surplus_deficit": -6011005.84,
+      "projected_fund_balance_eoy": -10304418.98,
+      "projected_fund_balance_pct_of_budget": -20.78
+    }
+  ],
+  "staffing": {
+    "r2": 0.999,
+    "coefficients": {
+      "fte": 81757.19,
+      "avg_salary": 824.29,
+      "benefit_rate": 39.11
+    },
+    "intercept": -52412889.52,
+    "driver_ranking": [
+      [
+        "Benefit rate",
+        0.542
+      ],
+      [
+        "Average salary",
+        0.491
+      ],
+      [
+        "FTE",
+        0.034
+      ]
+    ],
+    "per_pupil_staffing_cost_first": 11138.0,
+    "per_pupil_staffing_cost_last": 15625.0,
+    "avg_salary_cagr_pct": 2.93,
+    "benefit_cost_cagr_pct": 7.41,
+    "fte_first": 415.0,
+    "fte_last": 408.4,
+    "pupils_per_fte_last": 7.86
+  },
+  "scenarios": {
+    "Base case": {
+      "fy26_28_cumulative_surplus": -14300646.0,
+      "fy28_fund_balance": -10304419.0,
+      "fy28_fund_balance_pct_of_budget": -20.78
+    },
+    "State aid -5%": {
+      "fy26_28_cumulative_surplus": -16961710.0,
+      "fy28_fund_balance": -12965483.0,
+      "fy28_fund_balance_pct_of_budget": -26.15
+    },
+    "State aid +5%": {
+      "fy26_28_cumulative_surplus": -11639582.0,
+      "fy28_fund_balance": -7643355.0,
+      "fy28_fund_balance_pct_of_budget": -15.41
+    },
+    "Enrollment -3%": {
+      "fy26_28_cumulative_surplus": -14660165.0,
+      "fy28_fund_balance": -10663938.0,
+      "fy28_fund_balance_pct_of_budget": -21.5
+    },
+    "Enrollment +3%": {
+      "fy26_28_cumulative_surplus": -13941127.0,
+      "fy28_fund_balance": -9944900.0,
+      "fy28_fund_balance_pct_of_budget": -20.05
+    },
+    "Tax levy frozen (0% growth)": {
+      "fy26_28_cumulative_surplus": -15555153.0,
+      "fy28_fund_balance": -11558926.0,
+      "fy28_fund_balance_pct_of_budget": -23.31
+    },
+    "Benefits +2pp growth": {
+      "fy26_28_cumulative_surplus": -14960443.0,
+      "fy28_fund_balance": -10964216.0,
+      "fy28_fund_balance_pct_of_budget": -22.11
+    }
+  },
+  "anomaly_detection": {
+    "rule_zscore": {
+      "precision": 1.0,
+      "recall": 0.667,
+      "f1": 0.8,
+      "tp": 2,
+      "fp": 0,
+      "fn": 1
+    },
+    "isolation_forest": {
+      "precision": 0.5,
+      "recall": 0.667,
+      "f1": 0.571,
+      "tp": 2,
+      "fp": 2,
+      "fn": 1
+    },
+    "n_injected_anomalies": 3
+  }
+}
